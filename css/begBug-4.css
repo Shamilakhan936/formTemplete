@@ -1,0 +1,456 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+}
+
+/* Header Banner */
+.header-banner {
+    background: #c295c7;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0;
+}
+
+.main-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #001446;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Introduction Section */
+.intro-section {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.intro-text {
+    font-size: 20px;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1e49d7;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* List Styles */
+.prep-list,
+.important-list,
+.note-list {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.prep-list li,
+.important-list li,
+.note-list li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.prep-list li strong,
+.note-list li strong {
+    font-weight: medium;
+    color: #000;
+    font-family: cursive;
+    font-size: 16px;
+}
+
+.important-list li strong {
+    font-weight: medium !important;
+    color: #000;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.company-name,
+.address,
+.phone,
+.website {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.4;
+    font-family: cursive;
+}
+
+.website {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Large Screen Responsive Design */
+@media screen and (min-width: 1200px) {
+    .container {
+        /* max-width: 1200px; */
+        padding: 40px;
+        margin: 0 auto;
+    }
+    
+    .header-banner {
+        padding: 40px;
+        margin-bottom: 50px;
+        border-radius: 8px;
+    }
+    
+    .main-title {
+        font-size: 48px;
+        line-height: 1.1;
+    }
+    
+    .intro-text {
+        font-size: 24px;
+        line-height: 1.6;
+    }
+    
+    .section {
+        margin-bottom: 40px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    .prep-list,
+    .important-list,
+    .note-list {
+        margin-left: 30px;
+    }
+    
+    .prep-list li,
+    .important-list li,
+    .note-list li {
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    
+    .prep-list li strong,
+    .note-list li strong {
+        font-size: 18px;
+    }
+    
+    .contact-section {
+        margin-top: 60px;
+        padding: 30px 0;
+    }
+    
+    .contact-info {
+        gap: 12px;
+    }
+    
+    .company-name,
+    .address,
+    .phone,
+    .website {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+        padding: 50px;
+    }
+    
+    .header-banner {
+        padding: 50px;
+        margin-bottom: 60px;
+    }
+    
+    .main-title {
+        font-size: 70px;
+    }
+    
+    .intro-text {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .prep-list li,
+    .important-list li,
+    .note-list li {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    
+    .prep-list li strong,
+    .note-list li strong {
+        font-size: 20px;
+    }
+    
+    .contact-section {
+        margin-top: 80px;
+        padding: 40px 0;
+    }
+    
+    .company-name,
+    .address,
+    .phone,
+    .website {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+        padding: 60px;
+    }
+    
+    .header-banner {
+        padding: 60px;
+        margin-bottom: 70px;
+    }
+    
+    .main-title {
+        font-size: 80px;
+    }
+    
+    .intro-text {
+        font-size: 32px;
+    }
+    
+    .section-title {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    
+    .prep-list li,
+    .important-list li,
+    .note-list li {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .prep-list li strong,
+    .note-list li strong {
+        font-size: 22px;
+    }
+    
+    .contact-section {
+        margin-top: 100px;
+        padding: 50px 0;
+    }
+    
+    .company-name,
+    .address,
+    .phone,
+    .website {
+        font-size: 30px;
+    }
+}
+
+/* Medium Screen Responsive Design */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .container {
+        max-width: 900px;
+        padding: 30px;
+    }
+    
+    .header-banner {
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .main-title {
+        font-size: 50px;
+    }
+    
+    .intro-text {
+        font-size: 22px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .prep-list li,
+    .important-list li,
+    .note-list li {
+        font-size: 17px;
+        margin-bottom: 14px;
+    }
+    
+    .prep-list li strong,
+    .note-list li strong {
+        font-size: 17px;
+    }
+    
+    .contact-section {
+        margin-top: 50px;
+        padding: 25px 0;
+    }
+    
+    .company-name,
+    .address,
+    .phone,
+    .website {
+        font-size: 20px;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 0;
+    }
+    
+    .header-banner {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .main-title {
+        font-size: 24px;
+    }
+    
+    .intro-text {
+        font-size: 15px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .prep-list li,
+    .important-list li,
+    .note-list li {
+        font-size: 14px;
+    }
+    
+    .company-name,
+    .address,
+    .phone,
+    .website {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .header-banner {
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .main-title {
+        font-size: 20px;
+    }
+    
+    .intro-text {
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 16px;
+    }
+    
+    .prep-list li,
+    .important-list li,
+    .note-list li {
+        font-size: 12px;
+    }
+    
+    .company-name,
+    .address,
+    .phone,
+    .website {
+        font-size: 13px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .container {
+        max-width: none;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .header-banner {
+        background: #f4a460 !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .section-title {
+        color: #0066cc !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .website {
+        color: #0066cc !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+}
