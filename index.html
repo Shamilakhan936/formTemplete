@@ -30,18 +30,28 @@
             width: 90%;
         }
 
-        .logo-container {
+        .header {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin-bottom: 40px;
             padding: 20px;
+            text-align: center;
         }
 
         .logo {
             width: 120px;
             height: 120px;
             object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            color: #4A90E2;
+            font-weight: bold;
+            margin: 0;
         }
 
         .nav-sections {
@@ -141,6 +151,15 @@
                 grid-template-columns: 1fr;
             }
 
+            .header {
+                padding: 15px;
+            }
+
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+
             .main-title {
                 font-size: 2rem;
             }
@@ -171,7 +190,7 @@
             <div class="nav-section">
                 <h2 class="section-title">TERMITE</h2>
                 <ul class="nav-links">
-                    <li><a href="#">Termite - form 1</a></li>
+                    <li><a href="temite-1.html">Termite - form 1</a></li>
                     <li><a href="termite-2.html">Termite - form 2</a></li>
                     <li><a href="#">Termite - form 3</a></li>
                     <li><a href="#">Termite - form 4</a></li>
