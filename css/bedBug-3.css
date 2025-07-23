@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #000;
+    background: white;
+    padding: 0;
+    margin: 0;
+    /* max-width: 1440px; */
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #c295c7;
+    padding: 15px 20px;
+    margin-bottom: 0;
+    position: relative;
+    border-radius: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+    gap: 15px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+.logo {
+    width: 150px;
+    height: 120px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 10px;
+    color: #001446;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.contact-info div {
+    margin-bottom: 2px;
+    display: flex;
+    gap: 10px;
+}
+
+.contact-info .city {
+    min-width: 100px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-info .phone {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-info .website {
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.title-section {
+    text-align: right;
+    margin-bottom: 0;
+    color: #001446;
+}
+
+.main-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #001446 !important;
+    line-height: 1.2;
+}
+
+.page-info {
+    font-size: 10px;
+    color: #001446 !important;
+    font-weight: bold;
+}
+
+.header-disclaimer {
+    text-align: left;
+    font-size: 15px;
+    color: #0a0a0a;
+    font-style: normal;
+    border-radius: 0;
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    max-width: 450px;
+    color: #3a3c3c;
+}
+
+.page-info {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #3a3c3c;
+}
+
+.client-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.client-name,
+.account-number {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.client-name .label,
+.account-number .label {
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 80px;
+}
+
+.client-input,
+.account-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 2px 5px;
+    min-width: 200px;
+    font-size: 12px;
+    background: transparent;
+}
+
+.client-input {
+    min-width: 250px;
+}
+
+.account-input {
+    min-width: 100px;
+}
+
+.acknowledgment-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.acknowledgment-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.acknowledgment-items {
+    margin-bottom: 15px;
+}
+
+.acknowledgment-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.acknowledgment-item.highlighted {
+    background: #c295c7;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.initials-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 60px;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 4px;
+    background: transparent;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.clause-text {
+    font-size: 14px;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.document-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin: 0;
+}
+
+.acknowledgment-note {
+    font-size: 14px;
+    font-style: italic;
+    text-align: justify;
+    padding: 10px;
+    background: #f8f8f8;
+}
+
+.follow-up-section {
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    padding: 15px;
+    background: #c295c7;
+}
+
+.follow-up-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.furnishings-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.follow-up-text,
+.furnishings-text {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.signature-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.signature-left,
+.signature-right {
+    flex: 1;
+}
+
+.signature-field {
+    margin-bottom: 5px;
+}
+
+.signature-text {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.signature-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    min-height: 20px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    background: transparent;
+    width: 100%;
+    padding: 2px 0;
+}
+
+.signature-label {
+    font-size: 12px;
+    color: #0f0606;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.field-label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.company-info {
+    font-size: 14px;
+    
+    font-weight: medium;
+    line-height: 1.3;
+}
+
+.company-info div {
+    margin-bottom: 2px;
+}
+
+.payment-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+.payment-label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.check-input,
+.amount-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 120px;
+    text-align: left;
+    font-size: 11px;
+    padding: 2px;
+    background: transparent;
+    margin-left: 5px;
+}
+
+.card-info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.card-field {
+    flex: 1;
+}
+
+.card-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    font-size: 11px;
+    padding: 2px;
+    background: transparent;
+    margin-top: 3px;
+}
+
+.authorization-text {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.footer {
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 60px;
+    }
+    
+    .contact-info {
+        font-size: 10px;
+    }
+    
+    .main-title {
+        font-size: 16px;
+    }
+    
+    .page-info {
+        font-size: 12px;
+    }
+    
+    .client-info-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .client-input,
+    .account-input {
+        min-width: 150px;
+    }
+    
+    .acknowledgment-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .initials-input {
+        width: 50px;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .document-checkboxes {
+        flex-direction: column;
+        gap: 8px;
+        margin-left: 0;
+    }
+    
+    .follow-up-section {
+        padding: 12px;
+    }
+    
+    .signature-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .signature-left,
+    .signature-right {
+        width: 100%;
+    }
+    
+    .footer-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .payment-section {
+        max-width: 100%;
+    }
+    
+    .payment-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .card-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    .header {
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 80px;
+        height: 50px;
+    }
+    
+    .contact-info {
+        font-size: 9px;
+    }
+    
+    .main-title {
+        font-size: 14px;
+    }
+    
+    .page-info {
+        font-size: 11px;
+    }
+    
+    .acknowledgment-section {
+        padding: 15px;
+    }
+    
+    .acknowledgment-section h3,
+    .follow-up-section h3 {
+        font-size: 14px;
+    }
+    
+    .clause-text {
+        font-size: 11px;
+    }
+    
+    .follow-up-text,
+    .furnishings-text {
+        font-size: 11px;
+    }
+    
+    .initials-input {
+        width: 40px;
+    }
+    
+    .check-input,
+    .amount-input {
+        width: 80px;
+    }
+    
+    .signature-input,
+    .card-input {
+        font-size: 10px;
+    }
+    
+    .field-label,
+    .signature-label {
+        font-size: 9px;
+    }
+}
+
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .acknowledgment-section,
+    .follow-up-section,
+    .furnishings-section {
+        page-break-inside: avoid;
+    }
+    
+    .signature-section {
+        page-break-inside: avoid;
+    }
+}
