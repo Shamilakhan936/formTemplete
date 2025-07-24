@@ -1,0 +1,752 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    max-height: 200px;
+    width: auto;
+    margin-top: -60px;
+}
+
+.company-info {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: -30px;
+}
+.company-info p {
+    margin: 1px 0;
+}
+
+.website {
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* Job Info Table */
+.job-info-table {
+    flex-grow: 1;
+    max-width: 850px;
+    border: 2px solid #001446;
+    background-color: white;
+}
+
+.form-section {
+    border-bottom: 1px solid #4a90e2;
+}
+
+.form-section:last-child {
+    border-bottom: none;
+}
+
+.section-row {
+    display: flex;
+    background-color: #e8f4f8;
+    border-bottom: 1px solid #4a90e2;
+}
+
+.data-row {
+    display: flex;
+    background-color: white;
+    min-height: 35px;
+    align-items: center;
+}
+
+/* Label Strips */
+.label-strip {
+    background-color: #e8f4f8;
+    color: #4a90e2;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 4px 8px;
+    flex: 1;
+    text-transform: uppercase;
+}
+
+.label-strip-right {
+    background-color: #e8f4f8;
+    color: #4a90e2;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    width: 300px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.label-strip-mini {
+    background-color: #e8f4f8;
+    color: #4a90e2;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 150px;
+}
+
+/* Form Input Styling */
+.form-input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+.form-input:focus {
+    background-color: #f0f8ff;
+    border: 1px solid #4a90e2;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.data-field-date .form-input {
+    font-size: 16px;
+    text-align: center;
+}
+
+.data-field-city .form-input,
+.data-field-state .form-input,
+.data-field-zip .form-input,
+.data-field-right .form-input {
+    text-align: center;
+}
+
+/* Data Fields */
+.data-field-left {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.data-field-right {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+}
+
+.data-field-address {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.data-field-city {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    border-right: 1px solid #4a90e2;
+}
+
+.data-field-state {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    border-right: 1px solid #4a90e2;
+}
+
+.data-field-zip {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+}
+
+.data-field-remarks {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.data-field-date {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+}
+
+/* Remove old table styles */
+.info-table, .label-header, .name-field, .phone-number, .address-field, .city-field, .state-field, .zip-field, .job-location-field, .technician-field, .remarks-field, .date-field, .divider-row {
+    display: none;
+}
+
+/* Remove old input field styles */
+.input-field, .input-field.job-number, .input-field.state, .input-field.zip, .input-field.wide, .page-info {
+    display: none;
+}
+
+/* Legend Section */
+.legend-section {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: white;
+}
+.legend-item.checkbox-group label {
+    font-size: 14px;
+}
+.legend-row {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.legend-row:last-child {
+    margin-bottom: 0;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+.legend-item.checkbox-group {
+    gap: 8px;
+    min-width: 120px;
+}
+
+.legend-symbol {
+    width: 14px;
+    height: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.legend-text {
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 40px;
+}
+
+.legend-input {
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    width: 100px;
+    padding: 0 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+
+.legend-input:focus {
+    background-color: #f0f8ff;
+    border-bottom: 2px solid #4a90e2;
+}
+
+/* Legend symbol colors - More Realistic */
+.legend-symbol.rr {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.legend-symbol.pv2 {
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.legend-symbol.pv3 {
+    background-color: #2980b9;
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.legend-symbol.fv {
+    background: repeating-linear-gradient(
+        45deg,
+        #666 0px,
+        #666 2px,
+        #333 2px,
+        #333 4px,
+        #999 4px,
+        #999 6px
+    );
+    color: white;
+    font-size: 6px;
+    border: 1px solid #000;
+}
+
+.legend-symbol.dvc {
+    background: radial-gradient(circle at 30% 30%, #ff8c00, #e67e22);
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.legend-symbol.ovc {
+    background: repeating-linear-gradient(
+        45deg,
+        #ff8c00 0px,
+        #ff8c00 2px,
+        #ffb347 2px,
+        #ffb347 4px,
+        #e67e22 4px,
+        #e67e22 6px
+    );
+    color: white;
+    font-size: 6px;
+    border: 1px solid #d35400;
+}
+
+.legend-symbol.at {
+    color: #2c3e50;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.legend-symbol.gv {
+    background: radial-gradient(circle at 30% 30%, #ff8c00, #e67e22);
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.legend-symbol.rv {
+    background: repeating-linear-gradient(
+        45deg,
+        #e74c3c 0px,
+        #e74c3c 2px,
+        #c0392b 2px,
+        #c0392b 4px,
+        #e74c3c 4px,
+        #e74c3c 6px
+    );
+    color: white;
+    font-size: 6px;
+    border: 1px solid #a93226;
+}
+
+.legend-symbol.sgap {
+    background: radial-gradient(circle at 30% 30%, #e91e63, #c2185b);
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.legend-symbol.lgap {
+    background: radial-gradient(circle at 30% 30%, #9b59b6, #8e44ad);
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.legend-symbol.gds {
+    background: repeating-linear-gradient(
+        0deg,
+        #27ae60 0px,
+        #27ae60 2px,
+        #2ecc71 2px,
+        #2ecc71 4px,
+        #27ae60 4px,
+        #27ae60 6px
+    );
+    color: white;
+    border: 1px solid #1e8449;
+}
+
+.legend-symbol.llive {
+    background: repeating-linear-gradient(
+        90deg,
+        #2ecc71 0px,
+        #2ecc71 2px,
+        #27ae60 2px,
+        #27ae60 4px,
+        #2ecc71 4px,
+        #2ecc71 6px
+    );
+    color: white;
+    border: 1px solid #1e8449;
+}
+
+.legend-symbol.slive {
+    background: repeating-linear-gradient(
+        90deg,
+        #27ae60 0px,
+        #27ae60 2px,
+        #2ecc71 2px,
+        #2ecc71 4px,
+        #27ae60 4px,
+        #27ae60 6px
+    );
+    color: white;
+    border: 1px solid #1e8449;
+}
+
+.legend-symbol.siow {
+    background: radial-gradient(circle at 30% 30%, #2ecc71, #27ae60);
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.legend-symbol.low {
+    background: radial-gradient(circle at 30% 30%, #ff8c00, #e67e22);
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.legend-symbol.weeps {
+    background-color: #f39c12;
+    color: white;
+    border: 2px solid #2c3e50;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.legend-symbol.tx17 {
+    background: repeating-linear-gradient(
+        45deg,
+        #9b59b6 0px,
+        #9b59b6 2px,
+        #8e44ad 2px,
+        #8e44ad 4px,
+        #9b59b6 4px,
+        #9b59b6 6px
+    );
+    color: white;
+    border: 1px solid #6c3483;
+}
+
+.legend-symbol.dx30 {
+    background: radial-gradient(circle at 30% 30%, #f1c40f, #f39c12);
+    color: #2c3e50;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.legend-symbol.jw {
+    background: radial-gradient(circle at 30% 30%, #85c88a, #52b788);
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.checkbox {
+    margin: 0 3px;
+    transform: scale(0.9);
+}
+
+/* Chart Container */
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #f8f9fa;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.grid-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(to right, #c7d2fe 1px, transparent 1px),
+        linear-gradient(to bottom, #c7d2fe 1px, transparent 1px);
+    background-size: 25px 25px;
+    background-color: #f1f5f9;
+}
+
+.property-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.property-outline rect {
+    stroke: #1e293b;
+    stroke-width: 3;
+    fill: white;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+}
+
+.property-outline path {
+    stroke: #1e293b;
+    stroke-width: 3;
+    fill: white;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+}
+
+.property-outline line {
+    stroke: #64748b;
+    stroke-width: 2;
+}
+
+/* Professional Markers */
+.marker {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.marker:hover {
+    transform: translate(-50%, -50%) scale(1.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Red circles (RR) */
+.marker.red-circle {
+    background: #dc2626;
+    border: 2px solid white;
+}
+
+.marker.red-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Blue circles (2*PV) */
+.marker.blue-circle {
+    background: #2563eb;
+    border: 2px solid white;
+}
+
+.marker.blue-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Purple squares (17X17) */
+.marker.purple-square {
+    background: #7c3aed;
+    border-radius: 3px;
+    border: 2px solid white;
+    position: relative;
+}
+
+.marker.purple-square::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(255,255,255,0.3) 2px,
+        rgba(255,255,255,0.3) 4px
+    );
+    border-radius: 1px;
+}
+
+/* Orange circles (DVC) */
+.marker.orange-circle {
+    background: #ea580c;
+    border: 2px solid white;
+}
+
+.marker.orange-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Pink circles (S/GAP) */
+.marker.pink-circle {
+    background: #db2777;
+    border: 2px solid white;
+}
+
+.marker.pink-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Green circles (JW) */
+.marker.green-circle {
+    background: #16a34a;
+    border: 2px solid white;
+}
+
+.marker.green-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* WEEPS squares */
+.marker.weeps-square {
+    background: #f59e0b;
+    border-radius: 3px;
+    border: 3px solid #1f2937;
+    width: 16px;
+    height: 16px;
+}
+
+/* Remove old marker styles */
+.marker.rr-marker, .marker.pv2-marker, .marker.dvc-marker, .marker.sgap-marker, .marker.jw-marker, .marker.tx17-marker {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .job-info-table {
+        max-width: 100%;
+    }
+    
+    .legend-row {
+        gap: 10px;
+    }
+    
+    .chart-container {
+        height: 400px;
+    }
+    
+    .info-table {
+        font-size: 10px;
+    }
+    
+    .input-field {
+        font-size: 10px;
+        min-width: 50px;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    
+    .container {
+        border: 2px solid #000;
+        box-shadow: none;
+    }
+    
+    .chart-container {
+        background: white;
+    }
+}
