@@ -1,0 +1,354 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    margin: 0 auto;
+    border: 2px solid #4a90e2;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 208px;
+    height: 85px;
+    object-fit: cover;
+}
+
+.company-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.berrett-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a90e2;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+}
+
+.pest-control-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e74c3c;
+    letter-spacing: 1px;
+}
+
+.website {
+    font-size: 25px;
+    color: #001446;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+/* Input styling with embedded titles */
+
+/* Form Fields Section */
+.form-fields {
+    margin-bottom: 15px;
+}
+
+.field-row {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.zip-field {
+    flex: 0.3;
+}
+
+.field input {
+    border: 1px solid #001446;
+    padding: 4px 6px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    background-color: white;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.field input:focus {
+    outline: none;
+    /* border-color: #2980b9; */
+    box-shadow: 0 0 3px rgba(74, 144, 226, 0.3);
+}
+
+/* Graph Section */
+.graph-section {
+    margin-bottom: 15px;
+}
+
+.graph-header {
+    background-color: #c295c7;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.measurements {
+    display: flex;
+    gap: 20px;
+}
+
+.underline-input {
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    padding: 0 2px;
+    outline: none;
+    text-align: center;
+}
+
+.underline-input.short {
+    width: 60px;
+}
+
+.underline-input.long {
+    width: 80px;
+}
+
+.underline-input:focus {
+    border-bottom: 2px solid #c295c7;
+}
+
+.graph-container {
+    position: relative;
+    height: 600px;
+}
+
+.graph-grid {
+    height: 100%;
+    background-image: 
+        linear-gradient(to right, #c295c7 2px, transparent 2px),
+        linear-gradient(to bottom, #c295c7 2px, transparent 2px);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 0;
+    position: relative;
+    border: 2px solid #c295c7;
+}
+
+.graph-grid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(to right, #c295c7 3px, transparent 3px),
+        linear-gradient(to bottom, #c295c7 3px, transparent 3px);
+    background-size: 100px 100px;
+    opacity: 0.8;
+}
+
+.graph-text {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    color: #001446;
+    z-index: 10;
+}
+
+.graph-text.top-left {
+    top: 5px;
+    left: 5px;
+    font-size: 16px;
+}
+
+.graph-text.top-right {
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+}
+
+.graph-text.bottom-left {
+    bottom: 110px;
+    left: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.legend-text {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.2;
+    z-index: 10;
+    margin-left: 10px;
+}
+
+.legend-text div {
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 15px;
+}
+
+.admin-section {
+    flex: 1;
+}
+
+.admin-section h4 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    accent-color: #4a90e2;
+}
+
+.notes-section {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.notes-section h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #001446;
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+.notes-section p {
+    font-size: 13px;
+    line-height: 1.3;
+    margin-bottom: 5px;
+    color: #0b0101;
+}
+
+.notes-section p:first-of-type {
+    font-weight: bold;
+}
+
+.note-lines {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.note-input {
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    width: 100%;
+    font-size: 12px;
+    padding: 2px 5px;
+    outline: none;
+    color: #000;
+}
+
+.note-input:focus {
+    border-bottom: 2px solid #001446;
+    background-color: rgba(194, 149, 199, 0.1);
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    
+    .form-container {
+        box-shadow: none;
+        border:  solid #001446;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .website {
+        color: #000;
+    }
+    
+    .berrett-text {
+        color: #000;
+    }
+    
+    .pest-control-text {
+        color: #000;
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+    .form-container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .field-row {
+        flex-wrap: wrap;
+    }
+    
+    .footer {
+        flex-direction: column;
+    }
+}
