@@ -501,17 +501,10 @@ body {
     position: relative;
     width: 100%;
     height: 600px;
-    background: #f8f9fa;
+    background: #ffffff;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.chart-image {
-    width: 100%;
-    height: 100%;
-    object-fit: fill    ;
+    border: 1px solid #001446;
+    margin-top: 10px;
 }
 
 .grid-background {
@@ -519,10 +512,18 @@ body {
     width: 100%;
     height: 100%;
     background-image: 
-        linear-gradient(to right, #c7d2fe 1px, transparent 1px),
-        linear-gradient(to bottom, #c7d2fe 1px, transparent 1px);
-    background-size: 25px 25px;
-    background-color: #f1f5f9;
+        /* Major bold lines every 5th square */
+        linear-gradient(to right, #8b5a8f 1.5px, transparent 2px),
+        linear-gradient(to bottom, #8b5a8f 1.5px, transparent 2px),
+        /* Minor grid lines */
+        linear-gradient(to right, #c295c7 1px, transparent 1px),
+        linear-gradient(to bottom, #c295c7 1px, transparent 1px);
+    background-size: 
+        75px 75px,
+        75px 75px,
+        15px 15px,
+        15px 15px;
+    background-color: #ffffff;
 }
 
 .property-outline {
