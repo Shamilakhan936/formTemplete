@@ -1,37 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bed Bug Agreement - Page 3</title>
-    <link rel="stylesheet" href="css/bedBug-3.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #000;
+            background: white;
+            padding: 0;
+            margin: 0;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        .header {
+            background: #c295c7;
+            padding: 15px 20px;
+            margin-bottom: 0;
+        }
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .logo-cell {
+            width: 150px;
+            vertical-align: top;
+        }
+        .logo-cell img {
+            width: 100%;
+            height: 100%;
+            max-width: 150px;
+            max-height: 120px;
+        }
+        .contact-cell {
+            vertical-align: top;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .contact-info {
+            text-align: left;
+            font-size: 10px;
+            color: #001446;
+        }
+        .contact-row {
+            margin-bottom: 2px;
+        }
+        .city {
+            min-width: 100px;
+            font-size: 14px;
+            font-weight: bold;
+            /* Remove display: inline-block; and use float instead */
+            float: left;
+            clear: both;
+        }
+        .phone {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .website {
+            font-size: 14px;
+            margin-top: 6px;
+            font-weight: bold;
+        }
+                 .title-cell {
+             vertical-align: top;
+             text-align: center;
+         }
+        .main-title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #3a3c3c;
+            line-height: 1.2;
+        }
+        .page-info {
+            font-size: 30px;
+            margin-top: 10px;
+            color: #3a3c3c;
+        }
+                 .header-disclaimer {
+             text-align: center;
+             font-size: 14px;
+             color: #0a0a0a;
+             font-style: normal;
+             margin: 10px 0;
+             padding: 5px 10px;
+             line-height: 1.4;
+         }
+        .client-info-section {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+        .client-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .client-name, .account-number {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .client-input, .account-input {
+            border: none;
+            border-bottom: 1px solid #000;
+            padding: 2px 5px;
+            font-size: 12px;
+            background: transparent;
+            min-width: 200px;
+        }
+        .client-input {
+            min-width: 250px;
+        }
+        .account-input {
+            min-width: 100px;
+        }
+        .acknowledgment-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .acknowledgment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        .acknowledgment-row {
+            margin-bottom: 15px;
+        }
+        .acknowledgment-row.highlighted {
+            background: #c295c7;
+        }
+        .acknowledgment-row.highlighted td {
+            padding: 8px;
+        }
+        .initials-cell {
+            width: 70px;
+            vertical-align: top;
+            padding-right: 10px;
+        }
+        .initials-input {
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 60px;
+            text-align: center;
+            font-size: 12px;
+            padding: 2px 4px;
+            background: transparent;
+        }
+        .clause-text {
+            font-size: 14px;
+            line-height: 1.4;
+            vertical-align: top;
+        }
+        .checkbox-table {
+            margin-top: 10px;
+            margin-left: 70px;
+            border-collapse: collapse;
+        }
+        .checkbox-cell {
+            padding-right: 20px;
+            padding-bottom: 5px;
+            font-size: 16px;
+        }
+        .acknowledgment-note {
+            font-size: 14px;
+            font-style: italic;
+            text-align: justify;
+            padding: 10px;
+            background: #f8f8f8;
+        }
+        .follow-up-section {
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            padding: 15px;
+            background: #c295c7;
+        }
+        .follow-up-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .furnishings-heading {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .follow-up-text, .furnishings-text {
+            font-size: 14px;
+            text-align: justify;
+            line-height: 1.4;
+        }
+        .signature-section {
+            margin-bottom: 20px;
+            padding-top: 15px;
+        }
+        .signature-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .signature-cell {
+            vertical-align: top;
+            padding-right: 60px;
+            width: 50%;
+        }
+        .signature-field {
+            margin-bottom: 5px;
+        }
+        .signature-input {
+            border: none;
+            border-bottom: 1px solid #000;
+            min-height: 20px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            background: transparent;
+            width: 100%;
+            padding: 2px 0;
+        }
+        .signature-label {
+            font-size: 12px;
+            color: #0f0606;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .field-label {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .footer-section {
+            margin-bottom: 20px;
+            padding-top: 15px;
+        }
+        .footer-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .company-info {
+            font-size: 14px;
+            font-weight: medium;
+            line-height: 1.3;
+            vertical-align: top;
+        }
+        .company-info div {
+            margin-bottom: 2px;
+        }
+                 .payment-section {
+             max-width: 400px;
+             vertical-align: top;
+             padding-left: 17%;
+         }
+        .payment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        .payment-row {
+            margin-bottom: 10px;
+        }
+        .check-input, .amount-input {
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 120px;
+            text-align: left;
+            font-size: 11px;
+            padding: 2px;
+            background: transparent;
+            margin-left: 5px;
+        }
+        .card-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+                 .card-input {
+             border: none;
+             border-bottom: 1px solid #000;
+             width: 150px;
+             font-size: 11px;
+             padding: 2px;
+             background: transparent;
+             margin-top: 3px;
+         }
+        .authorization-text {
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        .footer {
+            font-size: 14px;
+            color: #000000;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <div class="bedbug-image"></div>
-        
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo">
+        <table class="header-table">
+            <tr>
+                <td class="logo-cell">
                     <img src="images/logo2.jpg" alt="Simpson Home Services Logo">
+                </td>
+                <td class="contact-cell">
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <span class="city">Address:</span> 
+                            <span class="phone">5565 Red Bird Center Drive, Dallas, TX 75237</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="city">Phone:</span> <span class="phone">(214) 814-1440</span>
                 </div>
+                        <div class="contact-row">
+                            <span class="city">Email:</span> <span class="phone">information@simpsonpest.com</span>
             </div>
-            
-            <div class="contact-info">
-                <div><span class="city">Address:
-                </span> <span class="phone">5565 Red Bird Center Drive
-                    Dallas, TX 75237</span></div>
-                <div><span class="city">Phone:</span> <span class="phone">(214) 814-1440</span></div>
-                <div><span class="city">Email:</span> <span class="phone">information@simpsonpest.com</span></div>
-                <!-- <div><span class="city">Dallas/FTW:</span> <span class="phone">(241) 242-4800</span></div> -->
                 <div class="website">www.simpsonpest.com</div>
             </div>
-            
-            <div class="title-section">
-                <div class="main-title">Aprehend Full Elimination Bedbug Agreement</div>
-                <div class="page-info">(page 3 of 3)</div>
-            </div>
-        </div>
+                </td>
+                                <td class="title-cell">
+                    <div class="main-title">Aprehend Full Elimination Bedbug Agreement</div>
+                    <div class="page-info">(page 3 of 3)</div>
+                </td>
+            </tr>
+        </table>
         
         <div class="header-disclaimer">
             In this document <b> [ Simpson Pest Control ] </b> will hereinafter be referred to as 'The Company'
@@ -39,69 +340,111 @@
     </div>
 
     <div class="client-info-section">
-        <div class="client-name">
-            <span class="label">Client Name:</span>
+        <table class="client-table">
+            <tr>
+                <td>
+                    <span class="client-name">Client Name:</span>
             <input type="text" class="client-input">
-        </div>
-        <div class="account-number">
-            <span class="label">Account #</span>
+                </td>
+                <td style="text-align: right;">
+                    <span class="account-number">Account #</span>
             <input type="text" class="account-input">
-        </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <div class="acknowledgment-section">
-        <h3>Client acknowledges the following:</h3>
+        <div class="section-title">Client acknowledges the following:</div>
         
-        <div class="acknowledgment-items">
-            <div class="acknowledgment-item">
+        <table class="acknowledgment-table">
+            <tr class="acknowledgment-row">
+                <td class="initials-cell">
                 <input type="text" class="initials-input">
-                <span class="clause-text">The Company may request clients to carry out recommendations to include but not limited to, removing clutter, making areas accessible for treatment, discarding items etc. Failure to follow these recommendations may delay or prevent "CONTROL" OR "ELIMINATION" of bed bugs AND WILL VOID THE FIXED PRICING SCHEDULE FOR LOW AND MODERATE LEVEL INFESTATIONS.</span>
-            </div>
+                </td>
+                <td class="clause-text">
+                    The Company may request clients to carry out recommendations to include but not limited to, removing clutter, making areas accessible for treatment, discarding items etc. Failure to follow these recommendations may delay or prevent "CONTROL" OR "ELIMINATION" of bed bugs AND WILL VOID THE FIXED PRICING SCHEDULE FOR LOW AND MODERATE LEVEL INFESTATIONS.
+                </td>
+            </tr>
+            <tr><td colspan="2" style="height: 15px;"></td></tr>
             
-            <div class="acknowledgment-item">
+            <tr class="acknowledgment-row">
+                <td class="initials-cell">
                 <input type="text" class="initials-input">
-                <span class="clause-text">The Company has permission to remove and discard the dust cover from the underside of the box spring and upholstered furniture.</span>
-            </div>
+                </td>
+                <td class="clause-text">
+                    The Company has permission to remove and discard the dust cover from the underside of the box spring and upholstered furniture.
+                </td>
+            </tr>
+            <tr><td colspan="2" style="height: 15px;"></td></tr>
             
-            <div class="acknowledgment-item">
+            <tr class="acknowledgment-row">
+                <td class="initials-cell">
                 <input type="text" class="initials-input">
-                <span class="clause-text">The Company has permission to encase the mattress and/or box spring in mattress/box spring covers.</span>
-            </div>
+                </td>
+                <td class="clause-text">
+                    The Company has permission to encase the mattress and/or box spring in mattress/box spring covers.
+                </td>
+            </tr>
+            <tr><td colspan="2" style="height: 15px;"></td></tr>
             
-            <div class="acknowledgment-item">
+            <tr class="acknowledgment-row">
+                <td class="initials-cell">
                 <input type="text" class="initials-input">
-                <span class="clause-text">The Company has permission to go through areas such as closets, furniture contents etc, during our treatment and inspection for bed bugs.</span>
-            </div>
+                </td>
+                <td class="clause-text">
+                    The Company has permission to go through areas such as closets, furniture contents etc, during our treatment and inspection for bed bugs.
+                </td>
+            </tr>
+            <tr><td colspan="2" style="height: 15px;"></td></tr>
             
-            <div class="acknowledgment-item">
+            <tr class="acknowledgment-row">
+                <td class="initials-cell">
                 <input type="text" class="initials-input">
-                <span class="clause-text">Clients are expected to respond to brief written surveys as part of the follow up procedure. Failure to respond to these surveys will prevent the infestation from being declared under "CONTROL" or "ELIMINATED".</span>
-            </div>
+                </td>
+                <td class="clause-text">
+                    Clients are expected to respond to brief written surveys as part of the follow up procedure. Failure to respond to these surveys will prevent the infestation from being declared under "CONTROL" or "ELIMINATED".
+                </td>
+            </tr>
+            <tr><td colspan="2" style="height: 15px;"></td></tr>
             
-            <div class="acknowledgment-item highlighted">
+            <tr class="acknowledgment-row highlighted">
+                <td class="initials-cell">
                 <input type="text" class="initials-input">
-                <span class="clause-text">People and pets are not to be present during treatment and must remain out of the structure for 1-2 hours following the completion of the service.</span>
-            </div>
+                </td>
+                <td class="clause-text">
+                    People and pets are not to be present during treatment and must remain out of the structure for 1-2 hours following the completion of the service.
+                </td>
+            </tr>
+            <tr><td colspan="2" style="height: 15px;"></td></tr>
             
-            <div class="acknowledgment-item">
+            <tr class="acknowledgment-row">
+                <td class="initials-cell">
                 <input type="text" class="initials-input">
-                <span class="clause-text">Client has received the following (initial each document received):</span>
-                <div class="document-checkboxes">
-                    <div class="checkbox-item">
+                </td>
+                <td class="clause-text">
+                    Client has received the following (initial each document received):
+                    <table class="checkbox-table">
+                        <tr>
+                            <td class="checkbox-cell">
                         <input type="checkbox"> Encasements
-                    </div>
-                    <div class="checkbox-item">
+                            </td>
+                            <td class="checkbox-cell">
                         <input type="checkbox"> Expectations of Service
-                    </div>
-                    <div class="checkbox-item">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox-cell">
                         <input type="checkbox"> Post Service Instructions
-                    </div>
-                    <div class="checkbox-item">
+                            </td>
+                            <td class="checkbox-cell">
                         <input type="checkbox"> Client Preparations
-                    </div>
-                </div>
-            </div>
-        </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
         
         <div class="acknowledgment-note">
             ** The items checked off and initialed above serve as an acknowledgment that the client and/or the property management company are aware of the above information. In the case of a tenant/landlord relationship, the property management firm/landlord agrees to communicate this information in advance of our treatment to their tenant prior to the initiation of this agreement.
@@ -109,21 +452,23 @@
     </div>
 
     <div class="follow-up-section">
-        <h3>Follow-up Protocols</h3>
+        <div class="follow-up-title">Follow-up Protocols</div>
         <div class="follow-up-text">
             As part of the bed bug program the company will require access to the infested areas. If follow-up visits DO NOT happen on days 30-35 after the initial treatment and 30 day intervals, the length of the program will in most cases be extended for an extra fee. In the event follow-ups cannot be scheduled, the client acknowledges that the price of the follow-ups will increase based on the severity of the problem when the follow-up is eventually performed.
         </div>
         
-        <h3 class="furnishings-heading">New Furnishings / Bedding</h3>
+        <div class="furnishings-heading">New Furnishings / Bedding</div>
         <div class="furnishings-text">
             In the event that any additional furnishings (new or used) or bedding is introduced additional costs may be incurred by the client. During the period of elimination this same condition applies. These costs will be in addition to the costs quoted for the Initial and Follow-up visits. The client authorizes the company to treat new furnishings and bedding without prior notice to the client and authorizes the company to bill additional amounts for the services rendered. Introducing new furnishings or bedding without notification voids your warranty.
         </div>
     </div>
 
     <div class="signature-section">
-        <div class="signature-left">
+        <table class="signature-table">
+            <tr>
+                <td class="signature-cell">
             <div class="signature-field">
-                <input type="text" class="signature-input">
+                        [SIGNATURE_FIELD_1]
             </div>
             <div class="signature-label">The Company Representative</div>
             
@@ -131,12 +476,12 @@
                 <input type="text" class="signature-input">
             </div>
             <div class="signature-label">Date of Estimate</div>
-        </div>
+                </td>
         
-        <div class="signature-right">
+                <td class="signature-cell">
             <div class="signature-field">
                 <div class="field-label">Signature to Proceed with Agreement</div>
-                <input type="text" class="signature-input">
+                        [SIGNATURE_FIELD_2]
             </div>
             <div class="signature-field">
                 <div class="field-label">Printed Name</div>
@@ -150,54 +495,54 @@
                 <div class="field-label">Date</div>
                 <input type="text" class="signature-input">
             </div>
-        </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <div class="footer-section">
-        <div class="company-info">
+        <table class="footer-table">
+            <tr>
+                <td class="company-info">
             <div>Simpson Pest Control</div>
             <div>5565 Red Bird Center Drive</div>
             <div>Dallas, TX 75237</div>
             <div>(214) 814-1440</div>
             <div>information@simpsonpest.com</div>
             <div>www.simpsonpest.com</div>
-        </div>
-        
-        <div class="payment-section">
-            <div class="payment-options">
-                <div class="checkbox-item">
-                    <input type="checkbox"> Amount Paid:
-                </div>
-                <div class="checkbox-item">
+                </td>
+                
+                <td class="payment-section">
+                    <div style="font-size: 16px; margin-bottom: 15px;">
+                        <input type="checkbox"> Amount Paid: &nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="checkbox"> Finance
                 </div>
-                <div class="checkbox-item">
-                    <input type="checkbox"> Check#
-                    <input type="text" class="check-input">
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox"> Credit Card $
-                    <input type="text" class="amount-input">
-                </div>
-            </div>
-            <div class="card-info">
-                <div class="card-field">
+                                        <div style="font-size: 16px; margin-bottom: 15px;">
+                        <input type="checkbox"> Check#
+                        <input type="text" class="check-input">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox"> Credit Card $
+                        <input type="text" class="amount-input">
+                    </div>
+                    <div style="margin-bottom: 15px;">
                     <div class="field-label">Acct#</div>
                     <input type="text" class="card-input">
                 </div>
-                <div class="card-field">
+                    <div style="margin-bottom: 15px;">
                     <div class="field-label">Exp</div>
                     <input type="text" class="card-input">
-                </div>
             </div>
             <div class="authorization-text">
                 I authorize to automatically charge my credit/debit card each treatment.
             </div>
-            <div class="signature-field">
-                <div class="field-label">Signature</div>
-                <input type="text" class="signature-input">
-            </div>
-        </div>
+                                <div class="signature-field">
+                        <div class="field-label">Signature</div>
+                        <div style="border-bottom: 1px solid #000; width: 200px; height: 20px; margin-bottom: 5px;"></div>
+                        [SIGNATURE_FIELD_3]
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <div class="footer">

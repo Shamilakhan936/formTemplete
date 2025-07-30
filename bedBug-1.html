@@ -1,219 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bedBug - 1</title>
-    <link rel="stylesheet" href="css/bedBug-1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #000;
+            background: white;
+            padding: 0;
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .underlined {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body>
-    <div class="header">
-        <div class="bedbug-image"></div>
-        
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo">
-                    <img src="images/logo2.jpg" alt="Simpson Home Services Logo">
+<body style="padding: 0 20px 20px 20px;">
+    <!-- Header Section -->
+    <table width="100%" style="background: #c295c7; padding: 15px 20px; margin-bottom: 0;">
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <!-- Logo Section -->
+                        <td width="150" valign="top" style="padding-right: 15px;">
+                            <img src="images/logo2.jpg" alt="Simpson Home Services Logo" style="width: 150px; height: 120px;">
+                        </td>
+                        
+                        <!-- Contact Info Section -->
+                        <td valign="top" style="text-align: left; font-size: 10px; color: #001446; margin: 0 20px; padding: 10px 20px;">
+                            <div style="margin-bottom: 2px; font-size: 14px; font-weight: bold;">
+                                <span style="min-width: 100px; display: inline-block;">Address:</span>
+                                5565 Red Bird Center Drive Dallas, TX 75237
+                            </div>
+                            <div style="margin-bottom: 2px; font-size: 14px; font-weight: bold;">
+                                <span style="min-width: 100px; display: inline-block;">Phone:</span>
+                                (214) 814-1440
+                            </div>
+                            <div style="margin-bottom: 2px; font-size: 14px; font-weight: bold;">
+                                <span style="min-width: 100px; display: inline-block;">Email:</span>
+                                information@simpsonpest.com
+                            </div>
+                            <div style="font-size: 14px; margin-top: 6px; font-weight: bold;">
+                                www.simpsonpest.com
+                            </div>
+                        </td>
+                        
+                        <!-- Title Section -->
+                        <td valign="top" style="text-align: center; color: #001446;">
+                            <div style="font-size: 25px; margin-top: 10px ; font-weight: bold; margin-bottom: 3px; color: #001446; line-height: 1.2; ">
+                                Aprehend Full Elimination Bedbug Agreement
+                            </div>
+                            <div style="font-size: 16px; color: #001446; font-weight: bold;">
+                                (page 1 of 3)
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+                <!-- Header Disclaimer -->
+                <div style="text-align: left; font-size: 15px; color: #0a0a0a; font-style: normal; margin-top: 10px;">
+                    In this document <b> [ Simpson Pest Control ] </b> will hereinafter be referred to as 'The Company'
                 </div>
-            </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Info Sections -->
+    <table width="100%" style="margin-top: 20px; margin-bottom: 20px; ">
+        <tr>
+            <!-- Service Information Box -->
+            <td width="50%" valign="top" style="padding-right: 10px;">
+                <table style="width: 100%; border: 2px solid #000;">
+                    <tr>
+                        <td style="font-size: 14px; font-weight: bold; margin: 0; padding: 8px; border-bottom: 1px solid #000; background: #f8f8f8;">
+                            SERVICE INFORMATION 
+                            <span style="float: right;">Acct #1106479</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0;">
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Contact</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;" colspan="5">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Company</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;" colspan="5">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Street</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;" colspan="5">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">City</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">State</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Zip Code</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Phone</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;" colspan="2">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Map-Grid</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;" colspan="2">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
             
-            <div class="contact-info">
-                <div><span class="city">Address:
-                </span> <span class="phone">5565 Red Bird Center Drive
-                    Dallas, TX 75237</span></div>
-                <div><span class="city">Phone:</span> <span class="phone">(214) 814-1440</span></div>
-                <div><span class="city">Email:</span> <span class="phone">information@simpsonpest.com</span></div>
-                <!-- <div><span class="city">Dallas/FTW:</span> <span class="phone">(241) 242-4800</span></div> -->
-                <div class="website">www.simpsonpest.com</div>
-            </div>
-            
-            <div class="title-section">
-                <div class="main-title">Aprehend Full Elimination Bedbug Agreement</div>
-                <div class="page-info">(page 1 of 3)</div>
-            </div>
-        </div>
-        
-        <div class="header-disclaimer">
-            In this document <b> [ Simpson Pest Control ] </b> will hereinafter be referred to as 'The Company'
+            <!-- Billing Information Box -->
+            <td width="50%" valign="top" style="padding-left: 10px;">
+                <table style="width: 100%; border: 2px solid #000;">
+                    <tr>
+                        <td style="font-size: 14px; font-weight: bold; margin: 0; padding: 8px; border-bottom: 1px solid #000; background: #f8f8f8;">
+                            BILLING INFORMATION 
+                            <span style="float: right;">Lead by: <input type="text" style="width: 100px; border: none; border-bottom: 1px solid #000;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0;">
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Contact</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;" colspan="5">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Company</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;" colspan="5">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Street</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;" colspan="5">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">City</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">State</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Zip Code</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Phone</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Fax</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                    <td style="border: 1px solid #000; padding: 6px 8px; font-size: 12px; vertical-align: top; font-weight: bold; width: 80px; background: #f8f8f8;">Map-Grid</td>
+                                    <td style="border: 1px solid #000; min-height: 25px; padding: 4px;">
+                                        <input type="text" style="border: none; width: 100%; font-size: 12px; background: transparent; min-height: 18px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Agreement Section -->
+    <div style="margin-bottom: 20px; ">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+            <span class="underlined">Nature and Scope of Agreement:</span> Bed Bug Inspection and Treatment Plan.
+        </h3>
+        <div style="text-align: justify; margin-bottom: 15px;">
+            <p style="font-size: 14px; margin-bottom: 10px;">
+                The agreement contained within has been designed for the management of bed bugs. However, due to the biology and behavior of this difficult pest, there is <span class="bold">no guarantee that bed bugs will be eliminated or prevented from</span> <span class="bold underlined">continuing to infest the treated areas.</span>
+            </p>
+            <p style="font-size: 14px;">
+                This treatment is for the current bed bug infestation only. Bed bugs are an introduced pest and the re-occurrence of bed bugs within the facility can occur at any given time. <span class="bold">Re-introduction of bed bugs is not covered in this agreement.</span> <span class="bold">All recommendations must be followed by customer to guarantee elimination.</span>
+            </p>
         </div>
     </div>
 
-    <div class="info-sections">
-        <div class="info-box">
-            <h3>SERVICE INFORMATION <span>Acct #1106479</span></h3>
-            <table class="info-table">
-                <tr>
-                    <td class="label">Contact</td>
-                    <td class="value" colspan="5"><input type="text"></td>
-                </tr>
-                <tr>
-                    <td class="label">Company</td>
-                    <td class="value" colspan="5"><input type="text"></td>
-                </tr>
-                <tr>
-                    <td class="label">Street</td>
-                    <td class="value" colspan="5"><input type="text"></td>
-                </tr>
-                <tr>
-                    <td class="label">City</td>
-                    <td class="value"><input type="text"></td>
-                    <td class="label">State</td>
-                    <td class="value"><input type="text"></td>
-                    <td class="label">Zip Code</td>
-                    <td class="value"><input type="text"></td>
-                </tr>
-                <tr>
-                    <td class="label">Phone</td>
-                    <td class="value" colspan="2"><input type="text"></td>
-                    <td class="label">Map-Grid</td>
-                    <td class="value" colspan="2"><input type="text"></td>
-                </tr>
-            </table>
+    <!-- Pricing Section -->
+    <div style="margin-bottom: 20px; border: 1px solid #000; padding: 15px; text-align: center; ">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px; margin-top: 0px; text-align: left; font-family: Arial;">
+            Pricing <span style="font-size: 14px; font-weight: bold;">(does not include tax)</span>
+        </h3>
+        <div style="margin-bottom: 15px; text-align: left;">
+            <p style="margin-bottom: 8px; font-size: 13px; font-weight: bold; line-height: 1; font-family: Arial;">
+                The price will be based upon the level of live bed bugs found during the initial treatment or during verification inspection.
+            </p>
+            <p style="margin-bottom: 8px; font-size: 13px; font-weight: bold; line-height: 1; font-family: Arial;">
+                The client must cooperate in order to maintain the pricing outlined below.
+            </p>
         </div>
-
-        <div class="info-box">
-            <h3>BILLING INFORMATION <span>Lead by: <input type="text" style="width: 100px; border: none; border-bottom: 1px solid #000;"></span></h3>
-            <table class="info-table">
-                <tr>
-                    <td class="label">Contact</td>
-                    <td class="value" colspan="5"><input type="text"></td>
-                </tr>
-                <tr>
-                    <td class="label">Company</td>
-                    <td class="value" colspan="5"><input type="text"></td>
-                </tr>
-                <tr>
-                    <td class="label">Street</td>
-                    <td class="value" colspan="5"><input type="text"></td>
-                </tr>
-                <tr>
-                    <td class="label">City</td>
-                    <td class="value"><input type="text"></td>
-                    <td class="label">State</td>
-                    <td class="value"><input type="text"></td>
-                    <td class="label">Zip Code</td>
-                    <td class="value"><input type="text"></td>
-                </tr>
-                <tr>
-                    <td class="label">Phone</td>
-                    <td class="value"><input type="text"></td>
-                    <td class="label">Fax</td>
-                    <td class="value"><input type="text"></td>
-                    <td class="label">Map-Grid</td>
-                    <td class="value"><input type="text"></td>
-                </tr>
-            </table>
-        </div>
+                 <table style="text-align: left;">
+             <tr>
+                 <td style="font-weight: normal; font-family: Arial; font-size: 12px;">Initial Intensive Treatment $</td>
+                 <td style="padding: 0 5px;">
+                     <input type="text" style="border: none; border-bottom: 1px solid #000; width: 60px; text-align: center; font-size: 12px; background: transparent;">
+                 </td>
+                 <td style="font-weight: normal; font-family: Arial; font-size: 12px;">Bedbug Encasements #</td>
+                 <td style="padding: 0 5px;">
+                     <input type="text" style="border: none; border-bottom: 1px solid #000; width: 60px; text-align: center; font-size: 12px; background: transparent;">
+                 </td>
+                 <td style="font-weight: normal; font-family: Arial; font-size: 12px;">X $60 = $</td>
+                 <td style="padding: 0 5px;">
+                     <input type="text" style="border: none; border-bottom: 1px solid #000; width: 60px; text-align: center; font-size: 12px; background: transparent;">
+                 </td>
+                 <td style="font-weight: normal; font-family: Arial; font-size: 12px;">Total + Tax $</td>
+                 <td style="padding: 0 5px;">
+                     <input type="text" style="border: none; border-bottom: 1px solid #000; width: 60px; text-align: center; font-size: 12px; background: transparent;">
+                 </td>
+             </tr>
+         </table>
     </div>
 
-    <div class="agreement-section">
-        <h3><span class="underlined">Nature and Scope of Agreement:</span> Bed Bug Inspection and Treatment Plan.</h3>
-        <div class="agreement-text">
-            <p>The agreement contained within has been designed for the management of bed bugs. However, due to the biology and behavior of this difficult pest, there is <span class="bold">no guarantee that bed bugs will be eliminated or prevented from</span> <span class="bold underlined">continuing to infest the treated areas.</span></p>
-            <p>This treatment is for the current bed bug infestation only. Bed bugs are an introduced pest and the re-occurrence of bed bugs within the facility can occur at any given time. <span class="bold">Re-introduction of bed bugs is not covered in this agreement.</span> <span class="bold">All recommendations must be followed by customer to guarantee elimination.</span></p>
-        </div>
-    </div>
-
-    <div class="pricing-section">
-        <h3>Pricing <span class="tax-note">(does not include tax)</span></h3>
-        <div class="pricing-intro">
-            <p>The price will be based upon the level of live bed bugs found during the initial treatment or during verification inspection.</p>
-            <p>The client must cooperate in order to maintain the pricing outlined below.</p>
-        </div>
-        <div class="pricing-breakdown">
-            <span class="pricing-label">Initial Intensive Treatment $</span>
-            <input type="text" class="pricing-input">
-            <span class="pricing-label">Bedbug Encasements #</span>
-            <input type="text" class="pricing-input">
-            <span class="pricing-label">X $60 = $</span>
-            <input type="text" class="pricing-input">
-            <span class="pricing-label">Total + Tax $</span>
-            <input type="text" class="pricing-input">
-        </div>
-    </div>
-
-    <div class="steps-section">
-        <div class="steps-header">
-            <div class="steps-title">7 Steps to Eliminating Bed Bugs</div>
-                    <div class="steps-details">
-            <div>Encasements: Twin <input type="text" class="underscore-input"> Full <input type="text" class="underscore-input"> Queen <input type="text" class="underscore-input"> King <input type="text" class="underscore-input"> Special <input type="text" class="underscore-input"></div>
-            <div>Number Bedrooms being Treated <input type="text" class="underscore-input"> Numbers of Living areas being Treated <input type="text" class="underscore-input"></div>
-        </div>
-        </div>
-
-        <div class="step">
-            <h4><span class="step-number">Step 1</span> <span class="step-title">Estimate</span></h4>
-        </div>
-
-        <div class="step">
-            <h4><span class="step-number">Step 2</span> <span class="step-title">Verification</span></h4>
-            <div class="verification-content">
-                <span>Bed bugs are verified as being present</span>
-                <div class="checkbox-group">
-                                    <div class="checkbox-item">
-                    <input type="checkbox"> Yes
-                </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox"> No
+    <!-- Steps Section -->
+    <div style="margin-bottom: 20px; border: 1px solid #000; padding: 15px; background: white;">
+        <!-- Steps Header -->
+        <table width="100%" style="margin-bottom: 15px;">
+            <tr>
+                <td>
+                    <div style="font-size: 28px; font-weight: bold; text-align: left; width: 100%; font-family: Arial;">
+                        7 Steps to Eliminating Bed Bugs
                     </div>
-                </div>
-            </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                                         <div style="font-size: 14px; margin-top: 10px; background: #c295c7; padding: 10px; font-family: Arial;">
+                         Encasements: Twin <input type="text" style="border: none; border-bottom: 1px solid #000; width: 25px; text-align: center; font-size: 12px; background: transparent; margin: 0 2px;"> 
+                         Full <input type="text" style="border: none; border-bottom: 1px solid #000; width: 25px; text-align: center; font-size: 12px; background: transparent; margin: 0 2px;"> 
+                         Queen <input type="text" style="border: none; border-bottom: 1px solid #000; width: 25px; text-align: center; font-size: 12px; background: transparent; margin: 0 2px;"> 
+                         King <input type="text" style="border: none; border-bottom: 1px solid #000; width: 25px; text-align: center; font-size: 12px; background: transparent; margin: 0 2px;"> 
+                         Special <input type="text" style="border: none; border-bottom: 1px solid #000; width: 25px; text-align: center; font-size: 12px; background: transparent; margin: 0 2px;">
+                         Number Bedrooms being Treated <input type="text" style="border: none; border-bottom: 1px solid #000; width: 25px; text-align: center; font-size: 12px; background: transparent; margin: 0 2px;"> 
+                         Numbers of Living areas being Treated <input type="text" style="border: none; border-bottom: 1px solid #000; width: 25px; text-align: center; font-size: 12px; background: transparent; margin: 0 2px;">
+                     </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Step 1 -->
+        <div style="margin-bottom: 5px;">
+            <h4 style="font-size: 25px; font-weight: bold; font-family: Arial;">
+                <span style="font-size: 20px;">Step 1</span> <span style="font-size: 20px;">Estimate</span>
+            </h4>
         </div>
 
-        <div class="step">
-            <h4><span class="step-number">Step 3</span> <span class="step-title">Initial Intensive Treatment</span></h4>
-            <div>This treatment will be performed once bed bugs are verified to be present in the structure.</div>
+        <!-- Step 2 -->
+        <div style="margin-bottom: 5px;">
+            <h4 style="font-size: 25px; font-weight: bold; font-family: Arial;">
+                <span style="font-size: 20px;">Step 2</span> <span style="font-size: 20px;">Verification</span>
+            </h4>
+            <table>
+                <tr>
+                    <td style="font-size: 16px;">Bed bugs are verified as being present</td>
+                    <td style="padding-left: 15px;">
+                        <span style="margin-right: 15px;">
+                            <input type="checkbox" style="margin-right: 5px;"> Yes
+                        </span>
+                        <span>
+                            <input type="checkbox" style="margin-right: 5px;"> No
+                        </span>
+                    </td>
+                </tr>
+            </table>
         </div>
 
-        <div class="step">
-            <h4><span class="step-number">Step 4</span> <span class="step-title">Follow-up Services</span></h4>
-            <div>The following contact information is being provided to the company so follow-ups can be scheduled and confirmed. (Preference order 1=Best, 4=Worst)</div>
-            <div class="contact-checkboxes">
-                <div class="checkbox-item">
-                    <input type="checkbox"> Email <input type="text" class="contact-input">
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox"> Cell <input type="text" class="contact-input"> 
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox"> Home <input type="text" class="contact-input">
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox"> Work <input type="text" class="contact-input">
-                </div>
-            </div>
-            <ul style="margin-left: 20px; margin-top: 10px;">
-                <li>Follow-up services will be conducted during which time the structure will be inspected and treated as necessary based upon inspection findings.</li>
-                <li>Follow-up visits will be scheduled 30 days following the initial treatment and will continue at approximately 30 day intervals until either 1) Control is declared. 2) Client notifies the <span class="underlined">company</span> that they want the program to end; thereby sacrificing control (Step 5) and elimination (Step 6). If this action is taken no service plan will be granted.</li>
-                <li>The <span class="underlined">company</span> will contact you in 3-7 days prior to your scheduled follow-up to remind and confirm the appointment. The <span class="underlined">company</span> will consider the appointment confirmed unless we hear directly from you changing the scheduled appointment. You agree that if the appointment is confirmed and we arrive and cannot gain access to the structure there will be a $75 trip fee of the follow-up treatment and that the treatment must be rescheduled for the full follow-up fee.</li>
+        <!-- Step 3 -->
+        <div style="margin-bottom: 5px;">
+            <h4 style="font-size: 25px; font-weight: bold; font-family: Arial;">
+                <span style="font-size: 20px;">Step 3</span> <span style="font-size: 20px;">Initial Intensive Treatment</span>
+            </h4>
+            <div style="font-size: 16px;">This treatment will be performed once bed bugs are verified to be present in the structure.</div>
+        </div>
+
+        <!-- Step 4 -->
+        <div style="margin-bottom: 5px;">
+            <h4 style="font-size: 25px; font-weight: bold; font-family: Arial;">
+                <span style="font-size: 20px;">Step 4</span> <span style="font-size: 20px;">Follow-up Services</span>
+            </h4>
+            <div style="font-size: 16px; margin-bottom: 10px;">The following contact information is being provided to the company so follow-ups can be scheduled and confirmed. (Preference order 1=Best, 4=Worst)</div>
+                         <table style="margin: 10px 0;">
+                 <tr>
+                     <td style="margin-right: 15px;">
+                         <input type="checkbox"> Email
+                         <input type="text" style="border: none; border-bottom: 1px solid #000; width: 120px; font-size: 12px; background: transparent; margin-left: 5px;">
+                     </td>
+                     <td style="padding-left: 20px;">
+                         <input type="checkbox"> Cell
+                         <input type="text" style="border: none; border-bottom: 1px solid #000; width: 120px; font-size: 12px; background: transparent; margin-left: 5px;">
+                     </td>
+                 </tr>
+                 <tr>
+                     <td style="margin-right: 15px;">
+                         <input type="checkbox"> Home
+                         <input type="text" style="border: none; border-bottom: 1px solid #000; width: 120px; font-size: 12px; background: transparent; margin-left: 5px;">
+                     </td>
+                     <td style="padding-left: 20px;">
+                         <input type="checkbox"> Work
+                         <input type="text" style="border: none; border-bottom: 1px solid #000; width: 120px; font-size: 12px; background: transparent; margin-left: 5px;">
+                     </td>
+                 </tr>
+             </table>
+            <ul style=" margin-top: 10px; font-size: 16px;">
+                <li style="font-size: 16px;">Follow-up services will be conducted during which time the structure will be inspected and treated as necessary based upon inspection findings.</li>
+                <li style="font-size: 16px;">Follow-up visits will be scheduled 30 days following the initial treatment and will continue at approximately 30 day intervals until either 1) Control is declared. 2) Client notifies the <span class="underlined">company</span> that they want the program to end; thereby sacrificing control (Step 5) and elimination (Step 6). If this action is taken no service plan will be granted.</li>
+                <li style="font-size: 16px;">The <span class="underlined">company</span> will contact you in 3-7 days prior to your scheduled follow-up to remind and confirm the appointment. The <span class="underlined">company</span> will consider the appointment confirmed unless we hear directly from you changing the scheduled appointment. You agree that if the appointment is confirmed and we arrive and cannot gain access to the structure there will be a $75 trip fee of the follow-up treatment and that the treatment must be rescheduled for the full follow-up fee.</li>
             </ul>
         </div>
 
-        <div class="step">
-            <h4><span class="step-number">Step 5</span> <span class="step-title">Control</span></h4>
-            <div class="agreement-text">
+        <!-- Step 5 -->
+        <div style="margin-bottom: 5px;">
+            <h4 style="font-size: 25px; font-weight: bold; font-family: Arial;">
+                <span style="font-size: 20px;">Step 5</span> <span style="font-size: 20px;">Control</span>
+            </h4>
+            <div style="text-align: justify; font-size: 16px;">
                 During each of the follow-up visits an evaluation will be made to determine if control has been achieved. The <span class="underlined">company</span> will declare CONTROL when no more bed bugs are observed during the follow-up visit AND the client has not reported any visible bed bug activity or experienced any bites during the immediate preceding 30 day period. If bites are occurring or bed bugs are found to be present then follow-up visits will continue until CONTROL can be declared or client wishes to end the agreement.
             </div>
         </div>
 
-        <div class="step">
-            <h4><span class="step-number">Step 6</span> <span class="step-title">Elimination</span></h4>
-            <div class="agreement-text">
+        <!-- Step 6 -->
+        <div style="margin-bottom: 5px;">
+            <h4 style="font-size: 25px; font-weight: bold; font-family: Arial;">
+                <span style="font-size: 20px;">Step 6</span> <span style="font-size: 20px;">Elimination</span>
+            </h4>
+            <div style="text-align: justify; font-size: 16px;">
                 The company will contact the client approximately 45 days after CONTROL has been declared to determine if ELIMINATION has been achieved. The infestation will be declared "eliminated" when no more bed bugs are observed by the client AND no bites are reported by the client for a period of 30 consecutive days after CONTROL has been declared. There is no charge for this communication. The client understands that if we are unable to make contact then the ELIIMINATION provision is void and the program reverts back to Step 4. (When combining the control and elimination step, 60 consecutive days will have passed with no bugs or bites have being reported or found). It is understood that in some situations, the infestation may never be declared "eliminated". In these cases ongoing services will be required to manage the bed bug infestation and no service plan will be granted. If during the <span class="bold">elimination and Service Plan period</span> additional furniture (new or used) is brought into the structure the elimination period may be void.
             </div>
         </div>
 
-        <div class="step">
-            <h4><span class="step-number">Step 7</span> <span class="step-title">Service Plan</span></h4>
-            <div class="agreement-text">
-                <div class="highlighted">
+        <!-- Step 7 -->
+        <div style="margin-bottom: 5px;">
+            <h4 style="font-size: 25px; font-weight: bold; font-family: Arial;">
+                <span style="font-size: 20px;">Step 7</span> <span style="font-size: 20px;">Service Plan</span>
+            </h4>
+            <div style="text-align: justify; font-size: 16px;">
+                <div style="background: #c295c7; padding: 2px 4px;">
                     The client will receive a <span class="bold">90</span> service plan which begins on the day that ELIMINATION has been declared. During the <span class="bold">90 days</span>, if bed bugs are found to be present, the <span class="underlined">company</span> will service the property at no additional charge.
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer">
+    <!-- Footer -->
+    <div style="font-size: 12px; color: #040000; margin-top: 30px; padding: 0 20px;">
         Rev. 7/12024 House Agreement
     </div>
 </body>

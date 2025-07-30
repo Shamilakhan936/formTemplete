@@ -1,215 +1,238 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simpsonpest Home Services - Navigation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Simpson Pest Control - Professional Services</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            max-width: 800px;
-            width: 90%;
-        }
-
-        .header {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 40px;
             padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            padding: 40px 20px;
             text-align: center;
+            color: white;
         }
-
+        
         .logo {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.3);
             margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
-
-        .main-title {
-            font-size: 2.5rem;
-            color: #4A90E2;
-            font-weight: bold;
-            margin: 0;
+        
+        .company-name {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
-
-        .nav-sections {
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 50px 30px;
+        }
+        
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
             margin-top: 40px;
         }
-
-        .nav-section {
+        
+        .service-card {
             background: #f8f9fa;
-            border-radius: 10px;
-            padding: 25px;
-            border-left: 5px solid #667eea;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
-
-        .nav-section:hover {
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4A90E2, #764ba2);
+        }
+        
+        .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            border-color: #4A90E2;
         }
-
-        .section-title {
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 20px;
-            font-weight: bold;
+        
+        .service-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 700;
             text-align: center;
+            position: relative;
         }
-
-        .nav-links {
+        
+        .service-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #4A90E2, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .service-links {
             list-style: none;
         }
-
-        .nav-links li {
-            margin-bottom: 12px;
-        }
-
-        .nav-links a {
-            display: block;
-            padding: 12px 15px;
-            background: white;
-            color: #333;
-            text-decoration: none;
-            border-radius: 8px;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-
-        .nav-links a:hover {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-            transform: translateX(5px);
-        }
-
-        .contact-info {
-            text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
-        }
-
-        .contact-info h3 {
-            color: #333;
+        
+        .service-links li {
             margin-bottom: 15px;
         }
-
-        .contact-details {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .contact-item {
-            padding: 10px;
+        
+        .service-link {
+            display: block;
+            padding: 15px 20px;
             background: white;
-            border-radius: 8px;
+            color: #495057;
+            text-decoration: none;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(74, 144, 226, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .service-link:hover {
+            border-color: #4A90E2;
+            color: #4A90E2;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.2);
+        }
+        
+        .service-link:hover::before {
+            left: 100%;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
             font-size: 0.9rem;
         }
-
-        .city {
-            color: #667eea;
-            font-weight: bold;
-        }
-
+        
         @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-                margin: 20px;
-            }
-
-            .nav-sections {
+            .services-grid {
                 grid-template-columns: 1fr;
+                gap: 20px;
             }
-
-            .header {
-                padding: 15px;
+            
+            .content {
+                padding: 30px 20px;
             }
-
-            .logo {
-                width: 100px;
-                height: 100px;
-            }
-
-            .main-title {
-                font-size: 2rem;
+            
+            .company-name {
+                font-size: 2.2rem;
             }
         }
     </style>
 </head>
-
 <body>
     <div class="container">
+        <!-- Header Section -->
         <div class="header">
-            <img src="images/logo2.jpg" alt="Simpson Home Services Logo" class="logo">
-            <h1 class="main-title">
-                Simpson Pest Control
-            </h1>
+            <img src="images/logo2.jpg" alt="Simpson Pest Control Logo" class="logo">
+            <h1 class="company-name">Simpson Pest Control</h1>
+            <p class="tagline">Professional Pest Management Solutions</p>
         </div>
 
-        <div class="nav-sections">
-            <div class="nav-section">
-                <h2 class="section-title">BED BUG</h2>
-                <ul class="nav-links">
-                    <li><a href="bedBug-1.html">Bed Bug Treatment - form 1</a></li>
-                    <li><a href="bedBug-2.html">Bed Bug Treatment - form 2</a></li>
-                    <li><a href="bedBug-3.html">Bed Bug Treatment - form 3</a></li>
-                    <li><a href="begBug-4.html">Bed Bug Treatment - form 4</a></li>
-                </ul>
-            </div>
+        <!-- Content Section -->
+        <div class="content">
+            <div class="services-grid">
+                <!-- Bed Bug Services -->
+                <div class="service-card">
+                    <h2 class="service-title">Bed Bug Services</h2>
+                    <ul class="service-links">
+                        <li><a href="bedBug-1.html" class="service-link">Bed Bug Treatment - Form 1</a></li>
+                        <li><a href="bedBug-2.html" class="service-link">Bed Bug Treatment - Form 2</a></li>
+                        <li><a href="bedBug-3.html" class="service-link">Bed Bug Treatment - Form 3</a></li>
+                        <li><a href="begBug-4.html" class="service-link">Bed Bug Treatment - Form 4</a></li>
+                    </ul>
+                </div>
 
-            <div class="nav-section">
-                <h2 class="section-title">TERMITE</h2>
-                <ul class="nav-links">
-                    <li><a href="temite-1.html">Termite - form 1</a></li>
-                    <li><a href="termite-2.html">Termite - form 2</a></li>
-                    <li><a href="termite-3.html">Termite - form 3</a></li>
-                    <li><a href="termite-4.html">Termite - form 4</a></li>
-                </ul>
-            </div>
+                <!-- Termite Services -->
+                <div class="service-card">
+                    <h2 class="service-title">Termite Services</h2>
+                    <ul class="service-links">
+                        <li><a href="temite-1.html" class="service-link">Termite Treatment - Form 1</a></li>
+                        <li><a href="termite-2.html" class="service-link">Termite Treatment - Form 2</a></li>
+                        <li><a href="termite-3.html" class="service-link">Termite Treatment - Form 3</a></li>
+                        <li><a href="termite-4.html" class="service-link">Termite Treatment - Form 4</a></li>
+                    </ul>
+                </div>
 
-            <div class="nav-section">
-                <h2 class="section-title">EXCLUSION</h2>
-                <ul class="nav-links">
-                    <li><a href="exclusion-1.html">Exclusion - form 1</a></li>
-                    <li><a href="exclusion-2.html">Exclusion - form 2</a></li>
-                    <li><a href="exclusion-3.html">Exclusion - form 3</a></li>
-                    <li><a href="exclusion-4.html"> Exclusion - form 4</a></li>
-                </ul>
+                <!-- Exclusion Services -->
+                <div class="service-card">
+                    <h2 class="service-title">Exclusion Services</h2>
+                    <ul class="service-links">
+                        <li><a href="exclusion-1.html" class="service-link">Exclusion Service - Form 1</a></li>
+                        <li><a href="exclusion-2.html" class="service-link">Exclusion Service - Form 2</a></li>
+                        <li><a href="exclusion-3.html" class="service-link">Exclusion Service - Form 3</a></li>
+                        <li><a href="exclusion-4.html" class="service-link">Exclusion Service - Form 4</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2024 Simpson Pest Control. Professional pest management services you can trust.</p>
+        </div>
     </div>
 </body>
-
 </html>
